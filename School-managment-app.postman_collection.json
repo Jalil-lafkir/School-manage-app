@@ -1,0 +1,650 @@
+{
+	"info": {
+		"_postman_id": "ecf239d4-def2-44a7-82c8-3f5da5d38816",
+		"name": "School-managment-app",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38690457"
+	},
+	"item": [
+		{
+			"name": "Student",
+			"item": [
+				{
+					"name": "all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/app/rest/student/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"app",
+								"rest",
+								"student",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "one",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/app/rest/student/1?token=S003952",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"app",
+								"rest",
+								"student",
+								"1"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "S003952"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"object\"   :{\n           \"id\": \"S001\",\n            \"name\": \"Jalil\",\n            \"email\": \"jalil@gmail.com\",\n            \"student_modules\": []\n        }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/app/rest/student/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"app",
+								"rest",
+								"student",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"object\"   :{\n           \"id\": \"S001\",\n            \"name\": \"ali\",\n            \"email\": \"ali@gmail.com\",\n            \"student_modules\": [{\"name\":\"ali\",\"id\":\"S001\",\"description\":\"tttttttttttttttttttttttttt\"},{\"name\":\"ali\",\"id\":\"S001\",\"description\":\"tttttttttttttttttttttttttt\"}]\n        }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/app/rest/student/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"app",
+								"rest",
+								"student",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"object\"   :{\n           \"id\": \"S001\",\n            \"name\": \"ali\",\n            \"email\": \"ali@gmail.com\",\n            \"student_modules\": []\n        }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/app/rest/student/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"app",
+								"rest",
+								"student",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Module",
+			"item": [
+				{
+					"name": "all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/app/rest/module/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"app",
+								"rest",
+								"module",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "one",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/app/rest/module/1?token=S001",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"app",
+								"rest",
+								"module",
+								"1"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "S001"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"object\"   :{\n    \"id\": \"12345\",\n    \"name\": \"Advanced Web Development\",\n    \"description\": \"A module covering modern web development technologies and frameworks.\",\n    \"coefficient\": 0,\n    \"firstExame\":0,\n    \"secondExame\": 0,\n    \"continuousMonitoring\": 0\n  }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/app/rest/module/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"app",
+								"rest",
+								"module",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"object\"   :{\n    \"id\": \"12345\",\n    \"name\": \"Advanced OOP\",\n    \"description\": \"A module covering modern OOP development technologies and frameworks.\",\n    \"coefficient\": 0,\n    \"firstExame\":0,\n    \"secondExame\": 0,\n    \"continuousMonitoring\": 0\n  }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/app/rest/module/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"app",
+								"rest",
+								"module",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"object\"   :{\n    \"id\": \"12345\",\n    \"name\": \"Advanced Web Development\",\n    \"description\": \"A module covering modern web development technologies and frameworks.\",\n    \"coefficient\": 0,\n    \"firstExame\":0,\n    \"secondExame\": 0,\n    \"continuousMonitoring\": 0\n  }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/app/rest/module/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"app",
+								"rest",
+								"module",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Session",
+			"item": [
+				{
+					"name": "all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/app/session/student/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"app",
+								"session",
+								"student",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "one",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/app/rest/session/1?token=S001",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"app",
+								"rest",
+								"session",
+								"1"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "S001"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"object\"   :{\n    \"id\": \"7890\",\n    \"name\": \"Web Development Workshop\",\n    \"date\": \"2025-03-15\",\n    \"time\": \"10:00 AM\",\n    \"roomId\": \"A101\",\n    \"professorId\": \"P567\",\n    \"moduleId\": \"12345\",\n    \"sessionStudents\": [\n      {\n        \"id\": \"S001\",\n        \"name\": \"John Doe\",\n        \"email\": \"johndoe@student.com\",\n        \"finalGarde\": 85\n      },\n      {\n        \"id\": \"S002\",\n        \"name\": \"Jane Smith\",\n        \"email\": \"janesmith@student.com\",\n        \"finalGarde\": 90\n      }\n    ]\n  }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/app/rest/session/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"app",
+								"rest",
+								"session",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"object\"   :{\n    \"id\": \"7890\",\n    \"name\": \"Web OOOOOOOOOOOOOOOOOOOOOOOOOOp Workshop\",\n    \"date\": \"2025-03-15\",\n    \"time\": \"10:00 AM\",\n    \"roomId\": \"A101\",\n    \"professorId\": \"P567\",\n    \"moduleId\": \"12345\",\n    \"sessionStudents\": [\n      {\n        \"id\": \"S001\",\n        \"name\": \"John Doe\",\n        \"email\": \"johndoe@student.com\",\n        \"finalGarde\": 85\n      },\n      {\n        \"id\": \"S002\",\n        \"name\": \"Jane Smith\",\n        \"email\": \"janesmith@student.com\",\n        \"finalGarde\": 90\n      },\n       {\n        \"id\": \"S002\",\n        \"name\": \"Jane Smith\",\n        \"email\": \"janesmith@student.com\",\n        \"finalGarde\": 90\n      },\n       {\n        \"id\": \"S002\",\n        \"name\": \"Jane Smith\",\n        \"email\": \"janesmith@student.com\",\n        \"finalGarde\": 90\n      }\n    ]\n  }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/app/rest/session/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"app",
+								"rest",
+								"session",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"object\"   : {\n    \"id\": \"7890\",\n    \"name\": \"Web Development Workshop\",\n    \"date\": \"2025-03-15\",\n    \"time\": \"10:00 AM\",\n    \"roomId\": \"A101\",\n    \"professorId\": \"P567\",\n    \"moduleId\": \"12345\",\n    \"sessionStudents\": [\n      {\n        \"id\": \"S001\",\n        \"name\": \"John Doe\",\n        \"email\": \"johndoe@student.com\",\n        \"finalGarde\": 85\n      },\n      {\n        \"id\": \"S002\",\n        \"name\": \"Jane Smith\",\n        \"email\": \"janesmith@student.com\",\n        \"finalGarde\": 90\n      }\n    ]\n  }\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/app/rest/session/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"app",
+								"rest",
+								"session",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Professor",
+			"item": [
+				{
+					"name": "all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/app/rest/professor/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"app",
+								"rest",
+								"professor",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "one",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/app/rest/professor/1?token=P00102",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"app",
+								"rest",
+								"professor",
+								"1"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "P00102"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"object\"   :{\n  \"id\": \"\",\n  \"name\": \"Jalil\",\n  \"email\": \"jalil@example.com\",\n  \"mountSalary\": \"\",\n  \"professor_sessions\": [\n    {\n      \"id\": \"S001\",\n      \"name\": \"Sample Session\",\n      \"date\": \"2025-01-01\",\n      \"time\": \"10:00\",\n      \"roomId\": \"R001\",\n      \"professorId\": \"P001\",\n      \"moduleId\": \"M001\"\n    }\n  ]\n}\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/app/rest/professor/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"app",
+								"rest",
+								"professor",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"object\"   :{\n  \"id\": \"\",\n  \"name\": \"Jalil\",\n  \"email\": \"jalil@example.com\",\n  \"mountSalary\": \"\",\n  \"professor_sessions\": [\n    {\n      \"id\": \"S001\",\n      \"name\": \"Sample Session\",\n      \"date\": \"2025-01-01\",\n      \"time\": \"10:00\",\n      \"roomId\": \"R001\",\n      \"professorId\": \"P001\",\n      \"moduleId\": \"M001\"\n    },\n    {\n      \"id\": \"S001\",\n      \"name\": \"Sample Session\",\n      \"date\": \"2025-01-01\",\n      \"time\": \"10:00\",\n      \"roomId\": \"R001\",\n      \"professorId\": \"P001\",\n      \"moduleId\": \"M001\"\n    },\n    {\n      \"id\": \"S001\",\n      \"name\": \"Sample Session\",\n      \"date\": \"2025-01-01\",\n      \"time\": \"10:00\",\n      \"roomId\": \"R001\",\n      \"professorId\": \"P001\",\n      \"moduleId\": \"M001\"\n    }\n  ]\n}\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/app/rest/professor/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"app",
+								"rest",
+								"professor",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"object\"   :{\n  \"id\": \"\",\n  \"name\": \"Jalil\",\n  \"email\": \"jalil@example.com\",\n  \"mountSalary\": \"\",\n  \"professor_sessions\": [\n    {\n      \"id\": \"S001\",\n      \"name\": \"Sample Session\",\n      \"date\": \"2025-01-01\",\n      \"time\": \"10:00\",\n      \"roomId\": \"R001\",\n      \"professorId\": \"P001\",\n      \"moduleId\": \"M001\"\n    }\n  ]\n}\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/app/rest/professor/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"app",
+								"rest",
+								"professor",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

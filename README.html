@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Documentation</title>
+  </head>
+  <body
+    style="
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      padding: 20px;
+      background-color: #f4f4f4;
+    "
+  >
+    <h1 style="color: #333; text-align: center">
+      Docementtaion about mini-tp and school managment app (gestion schoolaire)
+    </h1>
+
+    <div
+      style="
+        background: white;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        margin: 30px 30px;
+      "
+    >
+      <h2 style="color: #444">1- Mini tp (person - etudint - etudiant_ens)</h2>
+      <p style="color: #666; font-size: 16px; line-height: 1.5">
+        The resources available on Drive following the link
+        <a
+          href="https://drive.google.com/file/d/1-9ZrcOOJ_8XTgHsRu2bSV9EBduqtiPzy/view?usp=drive_link"
+          style="color: #007bff; text-decoration: none; font-weight: bold"
+        >
+          mini tp resources
+        </a>
+        or on Github following the link
+        <a
+          href="https://github.com/Jalil-lafkir/mini-Tp.git"
+          style="color: #007bff; text-decoration: none; font-weight: bold"
+        >
+          mini tp resources
+        </a>
+        <br /><br />
+      </p>
+
+      <ul style="color: #666; font-size: 16px; line-height: 1.5">
+        <li>Download the zip file from links above</li>
+        <li>Extract the zip file.</li>
+        <li>Open it with your favorite IDE.(eclips ....)</li>
+        <li>
+          Run the main file
+          <span style="font-weight: bold">App.java</span> located in the path
+          <span style="font-style: italic; font-weight: 800"
+            >/src/main/java/com/example</span
+          >
+          package.
+        </li>
+        <li>Enjoy!</li>
+      </ul>
+    </div>
+
+    <div
+      style="
+        background: white;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        margin: 30px 30px;
+      "
+    >
+      <h2 style="color: #444">2- school managment application</h2>
+      <p style="color: #666; font-size: 16px; line-height: 1.5">
+        The resources available on Drive following the link
+        <a
+          href="https://drive.google.com/file/d/1Hp_wXS9cWqKp7LlPPyvIlzLfW2yotHxp/view?usp=drive_link"
+          style="color: #007bff; text-decoration: none; font-weight: bold"
+        >
+          gestion schoolaire resources
+        </a>
+
+        or on Github following the link
+        <a
+          href="https://github.com/Jalil-lafkir/School-manage-app.git"
+          style="color: #007bff; text-decoration: none; font-weight: bold"
+        >
+          gestion schoolaire resources
+        </a>
+        <br /><br />
+
+        the school mangment app its a large project that contains frontend and
+        backend with difrents technologies we walk throw on ach one of those the
+        steps to run that project will splited on tow part but first
+      </p>
+
+      <ul style="color: #666; font-size: 16px; line-height: 1.5">
+        <li>Download the zip file from links above</li>
+        <li>Extract the zip file.</li>
+      </ul>
+
+      <!-- the backend server -->
+      <h3 style="color: #444; font-size: 16px; line-height: 1.5">
+        a. run the backend server
+      </h3>
+      <p style="color: #666; font-size: 16px; line-height: 1.5">
+        java jakarta EE based application work throw apis with maven build tool
+        and deployed on embed tomact serevr <br />
+      </p>
+
+      <ul style="color: #666; font-size: 16px; line-height: 1.5">
+        <li>open the project extracted folder in your IDE</li>
+        <li>open console window</li>
+        <li>navigate to server folder inside the project folder</li>
+        <li>
+          your console prompt should look like :
+          <span style="color: #666; font-size: 16px; font-weight: 800"
+            >C:\\Users\your-user-name\path\to\extracted\folder\School-manage-app\server</span
+          >
+        </li>
+        <li>
+          run the command
+          <span style="font-style: italic; font-weight: 800"
+            >mvn clean install</span
+          >
+          in console window
+        </li>
+        <li>
+          you should see
+          <span style="color: #666; font-size: 16px; font-weight: 800"
+            >build success</span
+          >
+        </li>
+        <li>
+          when installing dependency done run the main class with command
+          <span style="font-weight: 800"
+            >mvn exec:java -Dexec.mainClass="com.example.Server"</span
+          >
+        </li>
+        <li>
+          when see
+          <span style="font-weight: 800"
+            >Server running at: http://localhost:8080/app</span
+          >
+          on the console congrates the backend server is running
+        </li>
+      </ul>
+
+      <p
+        style="
+          background-color: red;
+          padding: 10px;
+          color: #f4f4f4;
+          font-size: 16px;
+          line-height: 1.5;
+        "
+      >
+        NOTE : if you don't use eclips IDE you should have maven installed on
+        your machine you can download it
+      </p>
+
+      <!-- the frontend server -->
+      <h3 style="color: #444; font-size: 16px; line-height: 1.5">
+        b. run the frontend server
+      </h3>
+      <p style="color: #666; font-size: 16px; line-height: 1.5">
+        ReactJs based application with vite build tool and deployed on vite
+        embed bundler <br />
+      </p>
+
+      <p
+        style="
+          background-color: red;
+          padding: 10px;
+          color: #f4f4f4;
+          font-size: 16px;
+          line-height: 1.5;
+        "
+      >
+        NOTE: you need to install NodeJs with npm
+        <a
+          href="https://nodejs.org/en/download"
+          target="_blank"
+          style="color: #444"
+          >from here</a
+        >
+      </p>
+
+      <ul style="color: #666; font-size: 16px; line-height: 1.5">
+        <li>open the project extracted folder in your IDE</li>
+        <li>open console window</li>
+        <li>navigate to admin-panel folder inside the project folder</li>
+        <li>
+          your console prompt should look like :
+          <span style="color: #666; font-size: 16px; font-weight: 800"
+            >C:\\Users\your-user-name\path\to\extracted\folder\School-manage-app\admin-panel</span
+          >
+        </li>
+        <li>
+          run the command
+          <span style="font-style: italic; font-weight: 800">npm install</span>
+          in console window
+        </li>
+        <li>
+          when installing dependency done run the command to start frontend
+          server
+          <span style="font-weight: 800">npm run dev</span>
+        </li>
+        <li>
+          when see
+          <span style="font-weight: 800"> ➜ Local: http://localhost:5173/</span>
+          on the console congrates the frontend server is running
+        </li>
+        <li>
+          visit <span style="font-weight: 800">http://localhost:5173/</span> on
+          browser and enjoy
+        </li>
+      </ul>
+
+      <!-- Api testing tool -->
+      <h3 style="color: #444; font-size: 16px; line-height: 1.5">
+        c. alternative way to test the backend server
+      </h3>
+
+      <p style="color: #666; font-size: 16px; line-height: 1.5">
+        you can use postman or soapUI or any Api testing tool to test the
+        backend server apis
+      </p>
+
+      <ul style="color: #666; font-size: 16px; line-height: 1.5">
+        <li>open your testing tool application</li>
+        <li>
+          import requestes json file located in
+          <span style="color: #666; font-size: 16px; font-weight: 800"
+            >C:\\Users\your-user-name\path\to\extracted\folder\School-manage-app\School-managment-app.postman_collection.json</span
+          >
+        </li>
+        <li>choose an endpoint folder</li>
+        <li>pick one of available requeste (all,one,create,update,delate)</li>
+        <li>press the send button</li>
+        <li>
+          you sould recive a responce from server with serval data from java
+          application
+        </li>
+        <li>enjoy</li>
+      </ul>
+    </div>
+
+    <div
+      style="
+        background: white;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        margin: 30px 30px;
+      "
+    >
+      <ul style="color: #666; font-size: 16px; line-height: 1.5">
+        <li>
+          [Author]:
+          <span style="color: #007bff; font-weight: bold">
+            Abdeldjalil lafkir</span
+          >
+        </li>
+        <li>
+          [Group]:
+          <span style="color: #007bff; font-weight: bold"> Groupe 02 </span>
+        </li>
+        <li>
+          [Email]:
+          <a
+            href="mailto:lafkir.abdeldjalile35@g.ens-kouba.dz"
+            style="color: #007bff; text-decoration: none; font-weight: bold"
+          >
+            lafkir.abdeldjalile35@g.ens-kouba.dz
+          </a>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
